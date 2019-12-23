@@ -24,7 +24,7 @@ const openStreetMapLayer = new TileLayer({
 // Vector data source in GeoJSON format
 const vectorGeoJSON = new VectorLayer({
   source: new VectorSource({
-    url: 'data/pays.geojson',
+    url: 'https://raw.githubusercontent.com/sandix34/Openlayers-test-workshop/master/data/pays.geojson',
     format: new GeoJSON()
   })
 })
@@ -32,7 +32,7 @@ const vectorGeoJSON = new VectorLayer({
 // Vector data source in GPX format
 const vectorGPX = new VectorLayer({
   source: new VectorSource({
-    url: 'data/capitales.gpx',
+    url: 'https://raw.githubusercontent.com/sandix34/Openlayers-test-workshop/master/data/capitales.gpx',
     format: new GPX()
   })
 })

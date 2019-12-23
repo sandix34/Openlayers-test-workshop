@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Using OpenLayers with Parcel</title>
     <link rel="stylesheet" href="https://openlayers.org/en/latest/css/ol.css" type="text/css">
+
     <script src="index.js" defer></script>
     <style>
       html, body {
@@ -16,9 +17,18 @@
         bottom: 0;
         width: 100%;
       }
+      .mount {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #088;
+        border-radius: 10px;
+        background-color: red;
+      }
     </style>
   </head>
   <body>
-    <div id="map"></div>
+    <div id="parentElement">
+      <div id="map"></div>
+    </div>
   </body>
 </html>
